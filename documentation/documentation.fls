@@ -1,0 +1,138 @@
+PWD c:\Users\wkell\OneDrive - University of Southampton\University work\Year 1\Other\Hackathon\notarmleg\documentation
+INPUT C:\Users\wkell\AppData\Local\MiKTeX\2.9\miktex\data\le\pdftex\pdflatex.fmt
+INPUT c:\Users\wkell\OneDrive - University of Southampton\University work\Year 1\Other\Hackathon\notarmleg\documentation\documentation.tex
+OUTPUT c:\Users\wkell\OneDrive - University of Southampton\University work\Year 1\Other\Hackathon\notarmleg\documentation\documentation.log
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size10.clo
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size10.clo
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\enumitem\enumitem.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\enumitem\enumitem.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\adjustbox\adjustbox.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\adjustbox\adjustbox.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\adjustbox\adjcalc.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\adjustbox\adjcalc.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\adjustbox\trimclip.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\adjustbox\trimclip.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\collectbox\collectbox.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\collectbox\collectbox.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\adjustbox\tc-pdftex.def
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\adjustbox\tc-pdftex.def
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ifoddpage\ifoddpage.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ifoddpage\ifoddpage.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ifoddpage\ifoddpage.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\varwidth\varwidth.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\varwidth\varwidth.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\varwidth\varwidth.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\ifpdf.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\ifpdf.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\iftex.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\iftex.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\ifvtex.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\ifvtex.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\ifxetex.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\ifxetex.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.cfg
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.cfg
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\dirtree\dirtree.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\dirtree\dirtree.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\generic\dirtree\dirtree.tex
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\generic\dirtree\dirtree.tex
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.sty
+INPUT c:\Users\wkell\OneDrive - University of Southampton\University work\Year 1\Other\Hackathon\notarmleg\documentation\documentation.aux
+INPUT c:\Users\wkell\OneDrive - University of Southampton\University work\Year 1\Other\Hackathon\notarmleg\documentation\documentation.aux
+OUTPUT c:\Users\wkell\OneDrive - University of Southampton\University work\Year 1\Other\Hackathon\notarmleg\documentation\documentation.aux
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\ifluatex.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\ifluatex.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr17.tfm
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr12.tfm
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr8.tfm
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr6.tfm
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi12.tfm
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi8.tfm
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi6.tfm
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy10.tfm
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy8.tfm
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy6.tfm
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmex10.tfm
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex8.tfm
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT images\armnotleg.png
+INPUT .\images\armnotleg.png
+OUTPUT c:\Users\wkell\OneDrive - University of Southampton\University work\Year 1\Other\Hackathon\notarmleg\documentation\documentation.pdf
+INPUT .\images\armnotleg.png
+INPUT .\images\armnotleg.png
+INPUT .\images\armnotleg.png
+INPUT C:\Users\wkell\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr12.tfm
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmtt10.tfm
+INPUT images\database.png
+INPUT .\images\database.png
+INPUT .\images\database.png
+INPUT .\images\database.png
+INPUT .\images\database.png
+INPUT c:\Users\wkell\OneDrive - University of Southampton\University work\Year 1\Other\Hackathon\notarmleg\documentation\documentation.aux
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr10.pfb
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr10.pfb
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr12.pfb
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr12.pfb
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr17.pfb
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr17.pfb
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmtt10.pfb
+INPUT C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmtt10.pfb

@@ -47,3 +47,6 @@ class DatabaseConnection:
             return True
         except Exception:
             return False
+
+
+    #def updateSpamTable(self, mailID, repo):

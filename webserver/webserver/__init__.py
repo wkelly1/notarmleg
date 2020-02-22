@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, flash, Markup
+from flask import Flask, render_template, request, flash, Markup, url_for, redirect
 from MySQLdb import escape_string as thwart
 from webserver.databaseConnection import DatabaseConnection
 import os
@@ -33,8 +33,8 @@ def unsubscribe():
         email = request.form.get("email")
 
         databaseConnection.removeEmail(email)
-        flash("You have been unsubscribed!")
-
+        flash("You have been unsubscribed!", "alert-success")
+        return redirect(url_for("index"))
     return render_template("unsubscribe.html")
 
 

@@ -3,7 +3,14 @@
 {% block body %}
 
     <div class="flex-container fullHeight fullWidth flex-center flex-column">
-        <div>
+        <div id="1" >
+            <h1 style="font-size: 200px;">No</h1>
+        </div>
+
+        <div id="2" style="display: none;">
+            <h1 style="font-size: 200px;">lol</h1>
+        </div>
+        <div id="3" style="display: none;">
             <h1>Unsubscribe from emails</h1>
 
             <form class="form-inline" method="post">
@@ -16,5 +23,19 @@
             </form>
         </div>
     </div>
+
+    <script>
+    setTimeout(
+    function() {
+      document.getElementById('1').style.display='none';
+      document.getElementById('2').style.display='initial';
+    }, 2000);
+
+    setTimeout(
+    function() {
+      document.getElementById('2').style.display='none';
+      document.getElementById('3').style.display='initial';
+    }, 2500);
+    </script>
 
 {% endblock %}

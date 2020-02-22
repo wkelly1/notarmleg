@@ -30,4 +30,5 @@ class DatabaseConnection:
     def addEmail(self, email, number):
         c, conn = self.connect()
         c.execute("INSERT INTO User (email, maxEmailsPerMonth)  VALUES (%s, %s)", (email, number,))
+        conn.commit()
         self.disconnect()

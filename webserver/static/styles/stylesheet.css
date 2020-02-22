@@ -13,8 +13,15 @@ body{
     display: -webkit-flex;
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+
+}
+
+.fullHeight{
     height: 100%;
+}
+
+.fullWidth{
+    width: 100%;
 }
 
 .flex-column{
@@ -34,4 +41,10 @@ body{
 .btn-primary{
     background-color: #2ADAFF;
     border-color: #2ADAFF;
+}
+
+a { color: inherit; }
+
+a:hover{
+    color: black;
 }

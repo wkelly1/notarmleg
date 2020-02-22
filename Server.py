@@ -3,6 +3,7 @@ from mailer import Mailer
 from mailer import Message
 import mysql.connector
 import time
+import os
 
 #How often emails are considered to be sent
 TIME = 600
@@ -14,8 +15,9 @@ password = "Yellow123%"
 sender = Mailer("smtp.gmail.com",usr=username,pwd=password, port=465,use_ssl=True)
 sender.login(username,password)
 
+pwd = os.environ.get("SQL_PASS")
 #SQL Setup
-mydb = mysql.connector.connect(host="localhost",user="admin",passwd="Yellow123%")
+mydb = mysql.connector.connect(host="localhost",user="root",passwd=pwd, database="mydb")
 
 
 def getMessage(emailAddress):
@@ -29,7 +31,7 @@ while True:
    
     #Fetch data from sql server
     mycursor = mydb.cursor()
-    mycursor.execute("SELECT * FROM customers")
+    mycursor.execute("SELECT email, MaxEmailsPerMonth FROM user")
     myresult = mycursor.fetchall()
      
     for x in myresult:

@@ -5,7 +5,7 @@ import os
 import urllib.request
 import json
 from urllib import parse
-
+import traceback
 app = Flask(__name__)
 app.config.from_object('configuration')
 
@@ -57,8 +57,11 @@ def tellOffpage():
                 body = urllib.request.urlopen(repo + 'featurerepo/' + i["id"] + '/body.txt').read().decode("utf-8")
 
                 features.append([header, body])
+
+            databaseConnection.updateSpamTable(arg, repo)
             return render_template("telloffpage.html", features=features)
-        except:
+        except Exception:
+            traceback.print_exc()
             return render_template("telloffpagewithoutmail.html")
 
 

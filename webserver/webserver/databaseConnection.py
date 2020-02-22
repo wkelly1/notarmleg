@@ -47,3 +47,24 @@ class DatabaseConnection:
             return True
         except Exception:
             return False
+
+
+    def updateSpamTable(self, mailID, repo):
+        try:
+            c, conn = self.connect()
+            no = c.execute("SELECT * FROM spammail WHERE idEmail = %s", (thwart(mailID),))
+            print(no)
+            if no == 0:
+                c.execute("INSERT INTO spammail (numClicked, repo, idEmail) VALUES (%s, %s, %s)", (1, thwart(repo), thwart(mailID),))
+            else:
+                c.execute("SELECT numClicked FROM spammail WHERE idEmail = %s", (thwart(mailID),))
+                no = c.fetchone()[0]
+                print(no)
+                c.execute("UPDATE spammail SET numClicked = %s WHERE idEmail = %s", (no+1, thwart(mailID),))
+
+            conn.commit()
+            self.disconnect()
+            print("here")
+            return True
+        except:
+            return False

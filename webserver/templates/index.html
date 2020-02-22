@@ -1,0 +1,26 @@
+{% extends "template.html" %}
+
+{% block body %}
+
+    <div class="flex-container fullHeight fullWidth flex-center flex-column">
+        <div>
+            <h1>You ready to receive some spam?</h1>
+            <p>Test yourself by entering your email into this box and we will send you some fake spam.</p>
+            <form class="form-inline" method="post">
+                <div class="form-group ">
+                    <label for="email" class="sr-only">Email</label>
+                    <input name="email" type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+                <div class="form-group ">
+                    <label for="maxNo" class="sr-only">Max emails per month</label>
+                    <input name="maxNo" type="number" class="form-control" id="maxNo" placeholder="Max emails per month">
+                </div>
+
+                <button type="submit" class="btn btn-primary mb-2">Submit</button>
+
+            </form>
+            <small style="color: grey">* By submitting to this you agree for us to have ALL your data</small>
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,50 @@
+body, html{
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    margin: 0;
+}
+.flex-container{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.fullHeight{
+    height: 100%;
+}
+
+.fullWidth{
+    width: 100%;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.flex-center{
+    align-items: center;
+    justify-content: center;
+}
+
+.pageContainer{
+    width: 100%;
+    height: 100%;
+}
+
+.btn-primary{
+    background-color: #2ADAFF;
+    border-color: #2ADAFF;
+}
+
+a { color: inherit; }
+
+a:hover{
+    color: black;
+}

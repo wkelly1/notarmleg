@@ -1,24 +1,5 @@
-from flask import Flask, render_template, request
-import databaseConnection
-import os
-
-app = Flask(__name__)
-
-pwd = os.environ.get("SQL_PASS")
-databaseConnection = databaseConnection.DatabaseConnection("127.0.0.1", "root", pwd, "mydb")
-
-@app.route('/', methods=["GET", "POST"])
-def index():
-    if request.method == "POST":
-        email = request.form.get("email")
-        maxEmails = request.form.get("maxNo")
-        print(email, maxEmails)
-        databaseConnection.addEmail(email, maxEmails)
-
-    return render_template("index.html")
-
-
-
+from webserver import app
 
 if __name__ == '__main__':
-    app.run()
+    app.secret_key = 'SECRET KEY'
+    app.run(host="0.0.0.0", port=5000, debug=True)

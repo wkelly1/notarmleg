@@ -23,8 +23,9 @@ mydb = mysql.connector.connect(host="localhost",user="root",passwd=pwd, database
 
 def getMessage(emailAddress):
     message = Message(From=username,To=emailAddress,charset="utf-8")
-    message.Subject = ("Click this link!")
-    message.Html = ("Spam email dont click links on emails like this!")
+    message.Subject = ("Important document")
+    #message.Html = ("Spam email dont click links on emails like this!")
+    message.Html = ("Please find attached")
     return message
 
 

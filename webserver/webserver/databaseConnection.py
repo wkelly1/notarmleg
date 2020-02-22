@@ -1,4 +1,5 @@
 import MySQLdb
+from MySQLdb import escape_string as thwart
 
 """
 """
@@ -28,7 +29,17 @@ class DatabaseConnection:
 
 
     def addEmail(self, email, number):
+        try:
+            c, conn = self.connect()
+            c.execute("INSERT INTO User (email, maxEmailsPerMonth)  VALUES (%s, %s)", (thwart(email), thwart(number),))
+            conn.commit()
+            self.disconnect()
+            return True
+        except Exception:
+            return False
+
+    def removeEmail(self, email):
         c, conn = self.connect()
-        c.execute("INSERT INTO User (email, maxEmailsPerMonth)  VALUES (%s, %s)", (email, number,))
+        c.execute("DELETE from User WHERE email = (%s)", (thwart(email),))
         conn.commit()
         self.disconnect()

@@ -43,8 +43,22 @@ body{
     border-color: #2ADAFF;
 }
 
-a { color: inherit; }
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
 
 a:hover{
-    color: black;
+    color: inherit;
+    text-decoration: inherit; /* no underline */
+}
+
+.errorflash {
+    width: 30%;
+    text-align: center;
+    position: fixed;
+    /*margin-top: 54px;*/
+    margin-top: 60px;
+    z-index: 200 !important;
+    right: 0;
 }

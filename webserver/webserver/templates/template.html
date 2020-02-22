@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>notarmleg</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/stylesheet.css') }}">
+</head>
+<body>
+
+
+
+<div style="padding: 10px; width: 100%; height: auto; background-color: #2ADAFF; color: white; justify-content: space-between;"
+     class="flex-container">
+    <div class="flex-container" style="flex-direction: column; justify-content: center;">
+        <a href="{{ url_for("index") }}"><h1 style="margin: 0; padding: 0;">NotArmLeg</h1></a>
+    </div>
+    <div class="flex-container" style="flex-direction: column; justify-content: center;">
+        <a href="{{ url_for("unsubscribe") }}"><h5 style="margin: 0; padding: 0;">Stop the spam</h5></a>
+    </div>
+</div>
+
+<div class="errorflash" style="">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div id="flashMessage" class="alert {{ category }} alert-dismissible" role="alert"
+                     style="z-index: 200 !important;">
+
+                    <button style="float:left;" type="button" class="close" data-dismiss="alert"
+                            aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+</div>
+{% block body %}
+
+
+{% endblock %}
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</html>

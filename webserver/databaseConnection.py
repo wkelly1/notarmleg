@@ -2,7 +2,7 @@ import MySQLdb
 
 """
 """
-class databaseConnection:
+class DatabaseConnection:
 
     def __init__(self, address, user, password, database):
         self.address = address
@@ -28,5 +28,6 @@ class databaseConnection:
 
 
     def addEmail(self, email, number):
-        c,conn = self.connect()
-        c.execute("INSERT into ")
+        c, conn = self.connect()
+        c.execute("INSERT INTO User (email, maxEmailsPerMonth)  VALUES (%s, %s)", (email, number,))
+        self.disconnect()

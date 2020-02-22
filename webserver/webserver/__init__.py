@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, flash
+from flask import Flask, render_template, request, flash, Markup
 from MySQLdb import escape_string as thwart
 from webserver.databaseConnection import DatabaseConnection
 import os
@@ -79,9 +79,9 @@ def stats():
     data = databaseConnection.getMostClicked()
     if len(data) > 0:
         try:
-            email = urllib.request.urlopen(
+            text = urllib.request.urlopen(
                 data[1] + 'spamrepo/' + data[0] + '/mail.txt').read().decode("utf-8")
-
+            text = Markup(text)
         except:
             email = "Hmmm something has gone wrong!"
-    return render_template("stats.html", email=email)
+    return render_template("stats.html", text=text)

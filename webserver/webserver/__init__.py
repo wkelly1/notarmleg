@@ -2,6 +2,9 @@ from flask import Flask, render_template, request, flash
 from MySQLdb import escape_string as thwart
 from webserver.databaseConnection import DatabaseConnection
 import os
+import urllib.request
+import json
+from urllib import parse
 
 app = Flask(__name__)
 app.config.from_object('configuration')
@@ -28,8 +31,34 @@ def unsubscribe():
         email = request.form.get("email")
 
         databaseConnection.removeEmail(email)
+        flash("You have been unsubscribed!")
 
     return render_template("unsubscribe.html")
 
+
+@app.route('/telloffpage')
+def tellOffpage():
+    arg = request.args.get("spamid")
+    repo = request.args.get("repo")
+
+
+    if arg == None or repo == None:
+        return render_template("telloffpagewithoutmail.html")
+    else:
+        try:
+            repo = parse.unquote(repo)
+            print(repo)
+            data = urllib.request.urlopen(repo + 'spamrepo/' + arg + '/features.json').read()
+            jsonData = json.loads(data)["features"]
+            features = []
+            for i in jsonData:
+                header = urllib.request.urlopen(
+                    repo + 'featurerepo/' + i["id"] + '/header.txt').read().decode("utf-8")
+                body = urllib.request.urlopen(repo + 'featurerepo/' + i["id"] + '/body.txt').read().decode("utf-8")
+
+                features.append([header, body])
+            return render_template("telloffpage.html", features=features)
+        except:
+            return render_template("telloffpagewithoutmail.html")
 
 

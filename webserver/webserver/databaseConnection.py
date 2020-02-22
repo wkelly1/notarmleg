@@ -39,7 +39,11 @@ class DatabaseConnection:
             return False
 
     def removeEmail(self, email):
-        c, conn = self.connect()
-        c.execute("DELETE from User WHERE email = (%s)", (thwart(email),))
-        conn.commit()
-        self.disconnect()
+        try:
+            c, conn = self.connect()
+            c.execute("DELETE from User WHERE email = (%s)", (thwart(email),))
+            conn.commit()
+            self.disconnect()
+            return True
+        except Exception:
+            return False

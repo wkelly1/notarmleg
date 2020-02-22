@@ -68,3 +68,14 @@ class DatabaseConnection:
             return True
         except:
             return False
+
+    def getMostClicked(self):
+        try:
+            c, conn = self.connect()
+            c.execute("SELECT idEmail, repo, MAX(numClicked) FROM SpamMail")
+            data = c.fetchone()
+            self.disconnect()
+            return [data[0], data[1], data[2]]
+        except:
+            return []
+

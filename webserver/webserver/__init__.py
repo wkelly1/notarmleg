@@ -6,6 +6,8 @@ import urllib.request
 import json
 from urllib import parse
 import traceback
+
+
 app = Flask(__name__)
 app.config.from_object('configuration')
 
@@ -47,7 +49,7 @@ def tellOffpage():
     else:
         try:
             repo = parse.unquote(repo)
-            print(repo)
+
             data = urllib.request.urlopen(repo + 'spamrepo/' + arg + '/features.json').read()
             jsonData = json.loads(data)["features"]
             features = []
@@ -55,8 +57,15 @@ def tellOffpage():
                 header = urllib.request.urlopen(
                     repo + 'featurerepo/' + i["id"] + '/header.txt').read().decode("utf-8")
                 body = urllib.request.urlopen(repo + 'featurerepo/' + i["id"] + '/body.txt').read().decode("utf-8")
+                print(repo + 'featurerepo/' + i["id"] + '/image.jpg')
+                try:
+                    img = repo + 'featurerepo/' + i["id"] + '/image.jpg'
+                    print(img)
+                except Exception:
+                    print("Exception")
+                    img=""
 
-                features.append([header, body])
+                features.append([header, body, img])
 
             databaseConnection.updateSpamTable(arg, repo)
             return render_template("telloffpage.html", features=features)
@@ -65,3 +74,14 @@ def tellOffpage():
             return render_template("telloffpagewithoutmail.html")
 
 
+@app.route('/stats')
+def stats():
+    data = databaseConnection.getMostClicked()
+    if len(data) > 0:
+        try:
+            email = urllib.request.urlopen(
+                data[1] + 'spamrepo/' + data[0] + '/mail.txt').read().decode("utf-8")
+
+        except:
+            email = "Hmmm something has gone wrong!"
+    return render_template("stats.html", email=email)

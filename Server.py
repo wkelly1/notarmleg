@@ -4,9 +4,10 @@ from mailer import Message
 import mysql.connector
 import time
 import os
+import random
 
 #How often emails are considered to be sent
-TIME = 600
+TIME = 10
 
 #Mail setup
 username = "notarmleg@gmail.com"
@@ -22,7 +23,7 @@ mydb = mysql.connector.connect(host="localhost",user="root",passwd=pwd, database
 
 def getMessage(emailAddress):
     message = Message(From=username,To=emailAddress,charset="utf-8")
-    message.Subject("Click this link!")
+    message.Subject = ("Click this link!")
     message.Html = ("Spam email dont click links on emails like this!")
     return message
 
@@ -35,8 +36,11 @@ while True:
     myresult = mycursor.fetchall()
      
     for x in myresult:
-        print(x)
-
+        prob = x[1]/40000
+        rand = random.random()
+        if rand < prob or True:
+            sender.send(getMessage(x[0]))
+            print("Sent email: " + x[0])
     time.sleep(TIME)
 
 sender.send(getMessage("lukebirchwood@hotmail.com"))

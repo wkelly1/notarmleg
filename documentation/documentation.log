@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.11.26)  22 FEB 2020 20:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.11.26)  22 FEB 2020 21:10
 entering extended mode
 **"c:/Users/wkell/OneDrive - University of Southampton/University work/Year 1/Other/Hackathon/notarmleg/documentation/documentation.tex"
 ("c:/Users/wkell/OneDrive - University of Southampton/University work/Year 1/Other/Hackathon/notarmleg/documentation/documentation.tex"
@@ -192,34 +192,56 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box32
 \@float@everytoks=\toks26
 \@floatcapt=\box33
-) ("c:/Users\wkell\OneDrive - University of Southampton\University work\Year 1\Other\Hackathon\notarmleg\documentation\documentation.aux")
+) ("C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.sty"
+\lst@mode=\count113
+\lst@gtempboxa=\box34
+\lst@token=\toks27
+\lst@length=\count114
+\lst@currlwidth=\dimen147
+\lst@column=\count115
+\lst@pos=\count116
+\lst@lostspace=\dimen148
+\lst@width=\dimen149
+\lst@newlines=\count117
+\lst@lineno=\count118
+\lst@maxwidth=\dimen150
+ ("C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstmisc.sty"
+File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
+\c@lstnumber=\count119
+\lst@skipnumbers=\count120
+\lst@framebox=\box35
+) ("C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.cfg"
+File: listings.cfg 2019/09/10 1.8c listings configuration
+))
+Package: listings 2019/09/10 1.8c (Carsten Heinz)
+ ("c:/Users\wkell\OneDrive - University of Southampton\University work\Year 1\Other\Hackathon\notarmleg\documentation\documentation.aux")
 \openout1 = `documentation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
  ("C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count113
-\scratchdimen=\dimen147
-\scratchbox=\box34
-\nofMPsegments=\count114
-\nofMParguments=\count115
-\everyMPshowfont=\toks27
-\MPscratchCnt=\count116
-\MPscratchDim=\dimen148
-\MPnumerator=\count117
-\makeMPintoPDFobject=\count118
-\everyMPtoPDFconversion=\toks28
+\scratchcounter=\count121
+\scratchdimen=\dimen151
+\scratchbox=\box36
+\nofMPsegments=\count122
+\nofMParguments=\count123
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count124
+\MPscratchDim=\dimen152
+\MPnumerator=\count125
+\makeMPintoPDFobject=\count126
+\everyMPtoPDFconversion=\toks29
 ) ("C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
  ("C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\infwarerr.sty"
@@ -284,39 +306,40 @@ Package grfext Info: Graphics extension search list:
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+\c@lstlisting=\count127
 <./images/armnotleg.png, id=1, 630.355pt x 340.27126pt>
 File: ./images/armnotleg.png Graphic file (type png)
 <use ./images/armnotleg.png>
-Package pdftex.def Info: ./images/armnotleg.png  used on input line 19.
+Package pdftex.def Info: ./images/armnotleg.png  used on input line 20.
 (pdftex.def)             Requested size: 399.21791pt x 215.50389pt.
 [1
 
 {C:/Users/wkell/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./images/armnotleg.png>]
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 31.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 32.
  ("C:\Users\wkell\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 31.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 32.
  [2]
 <./images/database.png, id=17, 636.3775pt x 544.0325pt>
 File: ./images/database.png Graphic file (type png)
 <use ./images/database.png>
-Package pdftex.def Info: ./images/database.png  used on input line 70.
+Package pdftex.def Info: ./images/database.png  used on input line 88.
 (pdftex.def)             Requested size: 399.21791pt x 341.28127pt.
- [3 <./images/database.png>] ("c:/Users\wkell\OneDrive - University of Southampton\University work\Year 1\Other\Hackathon\notarmleg\documentation\documentation.aux") ) 
+ [3 <./images/database.png>] [4] ("c:/Users\wkell\OneDrive - University of Southampton\University work\Year 1\Other\Hackathon\notarmleg\documentation\documentation.aux") ) 
 Here is how much of TeX's memory you used:
- 4142 strings out of 492450
- 63722 string characters out of 3120004
- 142788 words of memory out of 3000000
- 8429 multiletter control sequences out of 15000+200000
+ 5741 strings out of 492450
+ 84828 string characters out of 3120004
+ 164950 words of memory out of 3000000
+ 10016 multiletter control sequences out of 15000+200000
  8122 words of font info for 30 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 51i,6n,70p,691b,232s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 51i,6n,70p,691b,1062s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/wkell/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/wkell/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/wkell/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/wkell/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/wkell/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/wkell/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on "c:/Users\wkell\OneDrive - University of Southampton\University work\Year 1\Other\Hackathon\notarmleg\documentation\documentation.pdf" (3 pages, 123539 bytes).
+Output written on "c:/Users\wkell\OneDrive - University of Southampton\University work\Year 1\Other\Hackathon\notarmleg\documentation\documentation.pdf" (4 pages, 126251 bytes).
 PDF statistics:
- 40 PDF objects out of 1000 (max. 8388607)
+ 43 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

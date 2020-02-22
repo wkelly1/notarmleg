@@ -6,6 +6,7 @@
 \usepackage[margin=3cm]{geometry}
 \usepackage{dirtree}
 \usepackage{float}
+\usepackage{listings}
 
 \graphicspath{ {./images/} }
 
@@ -63,6 +64,23 @@ The web server uses flask for its backend. We are using mySQL for the data base.
 \end{figure}
 
 The spam repo is used to store all the emails that would be sent to the users. Inside this directory exists a mail.txt file that stores the html of the email. The features.json file contains metadata on the email. This metadata is information that says what about the email indicates that it is spam. Features can be found inside the feature repo. Each feature has a body, header allong with an image that is fetched once a link inside a spam email has been pressed. This can then be displayed on the webpage as the information used to educate the user.
+
+\begin{lstlisting}[frame=single, caption={features.json}]
+{
+    "features":[
+        {
+            "name":"funkyAddress",
+            "id":"funkyAddress",
+            "repository","repourl/telloffsite/featurerepo"
+        },
+        {
+            "name":"funkySpelling",
+            "id":"funkySpelling",
+            "repository","repourl/telloffsite/featurerepo"
+        }
+    ]
+}
+\end{lstlisting}
 
 \section{MySQL database}
 \begin{center}

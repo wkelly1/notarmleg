@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4f3c1b0-cb6b-443a-b2da-24b43dc874a5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/webserver/static/styles/mobile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webserver/static/styles/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/webserver/static/styles/stylesheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webserver/templates/stats.html" beforeDir="false" afterPath="$PROJECT_DIR$/webserver/templates/stats.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webserver/templates/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/webserver/templates/template.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webserver/templates/unsubscribe.html" beforeDir="false" afterPath="$PROJECT_DIR$/webserver/templates/unsubscribe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../documentation/documentation.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../documentation/documentation.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../documentation/documentation.fdb_latexmk" beforeDir="false" afterPath="$PROJECT_DIR$/../documentation/documentation.fdb_latexmk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../documentation/documentation.log" beforeDir="false" afterPath="$PROJECT_DIR$/../documentation/documentation.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../documentation/documentation.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../documentation/documentation.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../documentation/documentation.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../documentation/documentation.synctex.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../documentation/documentation.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../documentation/documentation.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webserver/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/webserver/__init__.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webserver/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+            <state relative-caret-position="655">
+              <caret line="81" column="49" selection-start-line="81" selection-start-column="49" selection-end-line="81" selection-end-column="49" />
               <folding>
                 <element signature="e#0#56#0" expanded="true" />
               </folding>
@@ -32,8 +34,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webserver/databaseConnection.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="623">
-              <caret line="74" column="31" lean-forward="true" selection-start-line="74" selection-start-column="31" selection-end-line="74" selection-end-column="31" />
+            <state relative-caret-position="682">
+              <caret line="73" column="42" lean-forward="true" selection-start-line="73" selection-start-column="42" selection-end-line="73" selection-end-column="42" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -122,7 +124,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webserver/templates/unsubscribe.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="528">
@@ -150,6 +152,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>update</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -171,19 +178,19 @@
         <option value="$PROJECT_DIR$/webserver/templates/telloffpagewithoutmail.html" />
         <option value="$PROJECT_DIR$/webserver/templates/telloffpage.html" />
         <option value="$PROJECT_DIR$/webserver/databaseConnection.py" />
-        <option value="$PROJECT_DIR$/webserver/__init__.py" />
         <option value="$PROJECT_DIR$/webserver/templates/stats.html" />
         <option value="$PROJECT_DIR$/webserver/static/styles/mobile.css" />
         <option value="$PROJECT_DIR$/webserver/templates/template.html" />
         <option value="$PROJECT_DIR$/webserver/static/styles/stylesheet.css" />
         <option value="$PROJECT_DIR$/webserver/templates/unsubscribe.html" />
+        <option value="$PROJECT_DIR$/webserver/__init__.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-3846" />
-    <option name="y" value="-567" />
-    <option name="width" value="2559" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-3506" />
+    <option name="y" value="-580" />
+    <option name="width" value="2178" />
     <option name="height" value="1566" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -334,7 +341,7 @@
       <option name="presentableId" value="Default" />
       <updated>1582376405970</updated>
       <workItem from="1582376408522" duration="20796000" />
-      <workItem from="1582398277240" duration="11218000" />
+      <workItem from="1582398277240" duration="13891000" />
     </task>
     <task id="LOCAL-00001" summary="Adding database connection and readme">
       <created>1582381246622</created>
@@ -347,18 +354,18 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32014000" />
+    <option name="totallyTimeSpent" value="34687000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3846" y="-567" width="2559" height="1566" extended-state="0" />
+    <frame x="-3848" y="-575" width="3856" height="1576" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16766706" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.110379346" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33217028" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32986832" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -408,7 +415,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/webserver$webserver.coverage" NAME="webserver Coverage Results" MODIFIED="1582388615374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/webserver$app.coverage" NAME="app Coverage Results" MODIFIED="1582415492522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/webserver$app.coverage" NAME="app Coverage Results" MODIFIED="1582426610632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/webserver$Flask__webserver___init___py_.coverage" NAME="Flask (webserver/__init__.py) Coverage Results" MODIFIED="1582386139612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="editorHistoryManager">
@@ -447,16 +454,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webserver/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -479,16 +476,6 @@
             <element signature="e#219#241#0#HTML" expanded="true" />
             <element signature="e#1086#1116#0#HTML" expanded="true" />
             <element signature="e#1159#1181#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webserver/databaseConnection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="623">
-          <caret line="74" column="31" lean-forward="true" selection-start-line="74" selection-start-column="31" selection-end-line="74" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -543,6 +530,26 @@
             <element signature="e#329#351#0#HTML" expanded="true" />
             <element signature="e#249#274#0#HTML" expanded="true" />
             <element signature="e#266#288#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webserver/databaseConnection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="73" column="42" lean-forward="true" selection-start-line="73" selection-start-column="42" selection-end-line="73" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webserver/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="655">
+          <caret line="81" column="49" selection-start-line="81" selection-start-column="49" selection-end-line="81" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
           </folding>
         </state>
       </provider>

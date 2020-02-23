@@ -50,20 +50,20 @@ def tellOffpage():
         try:
             repo = parse.unquote(repo)
 
-            data = urllib.request.urlopen(repo + 'spamrepo/' + arg + '/features.json').read()
+            data = urllib.request.urlopen(repo + arg + '/features.json').read()
             jsonData = json.loads(data)["features"]
             features = []
             for i in jsonData:
-                header = urllib.request.urlopen(
-                    repo + 'featurerepo/' + i["id"] + '/header.txt').read().decode("utf-8")
-                body = urllib.request.urlopen(repo + 'featurerepo/' + i["id"] + '/body.txt').read().decode("utf-8")
-                print(repo + 'featurerepo/' + i["id"] + '/image.jpg')
+                print(i["repository"] + i["id"] + '/header.txt')
+                header = urllib.request.urlopen(i["repository"] + i["id"] + '/header.txt').read().decode("utf-8")
+                body = urllib.request.urlopen(i["repository"] + i["id"] + '/body.txt').read().decode("utf-8")
+                print(i["repository"] + i["id"] + '/image.jpg')
                 try:
                     img = repo + 'featurerepo/' + i["id"] + '/image.jpg'
                     print(img)
                 except Exception:
                     print("Exception")
-                    img=""
+                    img = ""
 
                 features.append([header, body, img])
 
@@ -79,9 +79,10 @@ def stats():
     data = databaseConnection.getMostClicked()
     if len(data) > 0:
         try:
+            print(data[1] + data[0] + '/mail.txt')
             text = urllib.request.urlopen(
-                data[1] + 'spamrepo/' + data[0] + '/mail.txt').read().decode("utf-8")
+                data[1] + data[0] + '/mail.txt').read().decode("utf-8")
             text = Markup(text)
         except:
-            email = "Hmmm something has gone wrong!"
+            text = "Hmmm something has gone wrong!"
     return render_template("stats.html", text=text)

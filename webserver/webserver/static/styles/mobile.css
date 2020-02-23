@@ -1,0 +1,21 @@
+.logo{
+    font-size: 70px;
+    width: 100%;
+    text-align: center;
+}
+
+.link{
+    margin: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.link h5{
+    font-size: 30px;
+    margin-left: 0;
+}
+
+
+.link-container{
+    width: 100%;
+}

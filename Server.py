@@ -51,7 +51,7 @@ while True:
     # mycursor = mydb.cursor()
     myresult = execSql("SELECT email, MaxEmailsPerMonth FROM user")
     # myresult = mycursor.fetchall()
-
+    print(myresult)
     for x in myresult:
         prob = x[1] / 40000
         rand = random.random()

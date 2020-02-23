@@ -6,6 +6,11 @@ body, html{
 body{
     margin: 0;
 }
+
+.link{
+    margin-left: 50px;
+}
+
 .flex-container{
     display: -webkit-box;
     display: -moz-box;

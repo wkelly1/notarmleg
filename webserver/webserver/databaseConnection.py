@@ -1,6 +1,5 @@
 import MySQLdb
 from MySQLdb import escape_string as thwart
-
 """
 """
 class DatabaseConnection:
@@ -68,3 +67,15 @@ class DatabaseConnection:
             return True
         except:
             return False
+
+    def getMostClicked(self):
+        try:
+            c, conn = self.connect()
+            c.execute("SELECT idEmail, repo, numClicked FROM SpamMail ORDER BY numClicked DESC LIMIT 1")
+            data = c.fetchone()
+            print(data)
+            self.disconnect()
+            return [data[0], data[1], data[2]]
+        except:
+            return []
+

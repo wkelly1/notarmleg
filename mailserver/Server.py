@@ -21,6 +21,7 @@ sender.login(username, password)
 pwd = os.environ.get("SQL_PASS")
 # SQL Setup
 mydb = mysql.connector.connect(host="localhost", user="root", passwd=pwd, database="mydb")
+mydb.autocommit = True
 
 domain = "http://10.14.180.244:5000"
 
@@ -54,6 +55,12 @@ def getRandomName():
     myline =random.choice(lines)
     return myline
 
+def incrementSentNumber(idEmail):
+    sql = "SELECT numSent FROM spammail WHERE idEmail='" + idEmail + "'"
+    num = execSql(sql)[0]
+    print(num)
+    
+    
 def getMessage(emailAddress):
     message = Message(From=username, To=emailAddress, charset="utf-8")
     numOfSpamMail = execSql("SELECT COUNT(idSpamMail) FROM SpamMail")[0][0]
@@ -67,28 +74,8 @@ def getMessage(emailAddress):
     urlResponse = urllib.request.urlopen(str(repo) + "/" + str(idEmail) + "/mail.txt")
     spamMessageContent = urlResponse.read()
     spamMessageText = spamMessageContent.decode(urlResponse.headers.get_content_charset('utf-8')).replace('\n', '<br>')
-
-    testText = """
-    <html>
-    <head>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    </head>
-    <body>
-      <h3>Bulletin Alert!!</h3>
-      <h3>Attention {{.FirstName}} {{.LastName}}:</h3>
-    <p>Bulletin Headline: Crime Suspect</p>
-    <p>Sending Agency: Police</p>
-    <p>Bulletin Time: 18:47</p>
-    <p>Bulletin Case#: 11-04626</p>
-    <p>Bulletin Author: Leroy Jethro #8847</p>
-    <p>Sending User #: 2892</p>
-    <p><a href="{{.URL}}">To view the full bulletin alert click here</a></p>
-    <br>
-    <p>To unsubscribe from these emails click <a href="{{.URL}}">here</a></p>
-    </body>{{.Tracker}}
-    </html>
-    """
-    print(processRepoText(testText, idEmail, repo, emailAddress))
+    spamMessageText = processRepoText(spamMessageText, idEmail, repo, emailAddress)
+    
     
     urlResponse = urllib.request.urlopen(str(spamMail[1]) + "/" + str(spamMail[0]) + "/subject.txt")
     spamMessageSubjectText = urlResponse.read()
@@ -97,22 +84,28 @@ def getMessage(emailAddress):
     message.Subject = (spamMessageSubject)
     message.Html = spamMessageText
 
+    # increment database
+    incrementSentNumber(idEmail)
+    
     return message
 
 
+    
 while True:
-
+    
     # Fetch data from sql server
     # mycursor = mydb.cursor()
     myresult = execSql("SELECT * FROM user")
     # myresult = mycursor.fetchall()
-    print(myresult)
+    print("Users: ", myresult)
     for x in myresult:
+        
         prob = x[2] / 40000
         rand = random.random()
         if rand < prob or True:
             sender.send(getMessage(x[1]))
             print("Sent email: " + x[1])
     time.sleep(TIME)
+    
     sender.send(getMessage("charlesyim1999@gmail.com"))
 

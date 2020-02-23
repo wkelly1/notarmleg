@@ -27,12 +27,18 @@ domain = "http://10.14.180.244:5000"
 
 nameFile = "names.txt"
 
-def execSql(sql):
+def execSelectSql(sql):
     mycursor = mydb.cursor()
     mycursor.execute(sql)
     out = mycursor.fetchall()
     mycursor.close()
     return out
+
+def execChangeSql(sql):
+    mycursor = mydb.cursor()
+    mycursor.execute(sql)
+    mydb.commit()
+    mycursor.close()
 
 def processRepoText(text, idEmail, repo, emailAddress):
     generateUrl(idEmail, repo)
@@ -57,16 +63,18 @@ def getRandomName():
 
 def incrementSentNumber(idEmail):
     sql = "SELECT numSent FROM spammail WHERE idEmail='" + idEmail + "'"
-    num = execSql(sql)[0]
-    print(num)
+    num = execSelectSql(sql)[0]
+    print("number: ", num[0])
+    sql = "UPDATE spammail SET numSent='" + str(num[0]+1) + "' WHERE idEmail='" + idEmail + "'"
+    execChangeSql(sql)
     
     
 def getMessage(emailAddress):
     message = Message(From=username, To=emailAddress, charset="utf-8")
-    numOfSpamMail = execSql("SELECT COUNT(idSpamMail) FROM SpamMail")[0][0]
+    numOfSpamMail = execSelectSql("SELECT COUNT(idSpamMail) FROM SpamMail")[0][0]
     randMailIndex = int(random.random() * numOfSpamMail + 1)
     print(str(randMailIndex))
-    spamMail = execSql("SELECT idEmail, repo FROM SpamMail WHERE idSpamMail = " + str(randMailIndex))[0]
+    spamMail = execSelectSql("SELECT idEmail, repo FROM SpamMail WHERE idSpamMail = " + str(randMailIndex))[0]
 
     idEmail = spamMail[0]
     repo = spamMail[1]
@@ -95,7 +103,7 @@ while True:
     
     # Fetch data from sql server
     # mycursor = mydb.cursor()
-    myresult = execSql("SELECT * FROM user")
+    myresult = execSelectSql("SELECT * FROM user")
     # myresult = mycursor.fetchall()
     print("Users: ", myresult)
     for x in myresult:
@@ -107,5 +115,5 @@ while True:
             print("Sent email: " + x[1])
     time.sleep(TIME)
     
-    sender.send(getMessage("charlesyim1999@gmail.com"))
+    #sender.send(getMessage("charlesyim1999@gmail.com"))
 

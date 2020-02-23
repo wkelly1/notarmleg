@@ -64,7 +64,6 @@ def getRandomName():
 def incrementSentNumber(idEmail):
     sql = "SELECT numSent FROM spammail WHERE idEmail='" + idEmail + "'"
     num = execSelectSql(sql)[0]
-    print("number: ", num[0])
     sql = "UPDATE spammail SET numSent='" + str(num[0]+1) + "' WHERE idEmail='" + idEmail + "'"
     execChangeSql(sql)
     
@@ -77,7 +76,7 @@ def getMessage(emailAddress):
     
     numOfSpamMail = execSelectSql("SELECT COUNT(idSpamMail) FROM SpamMail")[0][0]
     randMailIndex = int(random.random() * numOfSpamMail)
-    print(str(randMailIndex))
+
     spamMail = execSelectSql("SELECT idEmail, repo FROM SpamMail")[randMailIndex]
 
     idEmail = spamMail[0]

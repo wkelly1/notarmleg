@@ -1,6 +1,0 @@
-function Weight = SGD_method(Weight, input, correct_Output)
-alpha = 0.9
-
-N = 4
-for k = 1:N
-    transposed_Input = input(k, :)';

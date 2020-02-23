@@ -71,10 +71,14 @@ def incrementSentNumber(idEmail):
     
 def getMessage(emailAddress):
     message = Message(From=username, To=emailAddress, charset="utf-8")
+
+    
+
+    
     numOfSpamMail = execSelectSql("SELECT COUNT(idSpamMail) FROM SpamMail")[0][0]
-    randMailIndex = int(random.random() * numOfSpamMail + 1)
+    randMailIndex = int(random.random() * numOfSpamMail)
     print(str(randMailIndex))
-    spamMail = execSelectSql("SELECT idEmail, repo FROM SpamMail WHERE idSpamMail = " + str(randMailIndex))[0]
+    spamMail = execSelectSql("SELECT idEmail, repo FROM SpamMail")[randMailIndex]
 
     idEmail = spamMail[0]
     repo = spamMail[1]
@@ -110,7 +114,7 @@ while True:
         
         prob = x[2] / 40000
         rand = random.random()
-        if rand < prob or True:
+        if rand < prob:
             sender.send(getMessage(x[1]))
             print("Sent email: " + x[1])
     time.sleep(TIME)

@@ -6,7 +6,7 @@ import urllib.request
 import json
 from urllib import parse
 import traceback
-
+import webserver.emailReplacement
 
 app = Flask(__name__)
 app.config.from_object('configuration')
@@ -36,6 +36,7 @@ def unsubscribe():
         flash("You have been unsubscribed!", "alert-success")
         return redirect(url_for("index"))
     return render_template("unsubscribe.html")
+
 
 
 @app.route('/telloffpage')
@@ -74,6 +75,7 @@ def tellOffpage():
             return render_template("telloffpagewithoutmail.html")
 
 
+
 @app.route('/stats')
 def stats():
     data = databaseConnection.getMostClicked()
@@ -83,6 +85,7 @@ def stats():
             text = urllib.request.urlopen(
                 data[1] + data[0] + '/mail.txt').read().decode("utf-8")
             text = Markup(text)
+            text = emailReplacement.processRepoText(text, data[0], data[1], "example@example.com")
         except:
             text = "Hmmm something has gone wrong!"
     return render_template("stats.html", text=text)

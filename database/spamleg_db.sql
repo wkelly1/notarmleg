@@ -93,6 +93,25 @@ CREATE TABLE IF NOT EXISTS `mydb`.`MailFeatures` (
 ENGINE = InnoDB;
 
 
+-- -----------------------------------------------------
+-- Table `mydb`.`Classification`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `mydb`.`Classification` (
+  `idClassification` INT NOT NULL,
+  `idSpamMail` INT NULL,
+  `correctness` FLOAT NULL,
+  `difficulty` FLOAT NULL,
+  `significance` FLOAT NULL,
+  PRIMARY KEY (`idClassification`),
+  INDEX `idSpamMail_idx` (`idSpamMail` ASC) VISIBLE,
+  CONSTRAINT `idSpamMail`
+    FOREIGN KEY (`idSpamMail`)
+    REFERENCES `mydb`.`SpamMail` (`idSpamMail`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;

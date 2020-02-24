@@ -7,6 +7,9 @@ import json
 from urllib import parse
 import traceback
 import webserver.emailReplacement
+from mailer import Mailer
+from mailer import Message
+from cryptography.fernet import Fernet
 
 app = Flask(__name__)
 app.config.from_object('configuration')
@@ -15,6 +18,20 @@ app.config.from_object('configuration')
 pwd = os.environ.get("SQL_PASS")
 databaseConnection = DatabaseConnection("127.0.0.1", "root", pwd, "mydb")
 
+# Mail setup
+username = "notarmleg@gmail.com"
+password = "Yellow123%"
+
+sender = Mailer("smtp.gmail.com", usr=username, pwd=password, port=465, use_ssl=True)
+sender.login(username, password)
+
+def sendVerifyEmail(email):
+    message = Message(From=username, To=email, charset="utf-8")
+    message.Subject = "Verify email"
+    message.Html = "<a href='http://10.14.180.244:5000/verifyemail?email=" + email + "'" + ">Verify email</a>"
+    sender.send(message)
+    print("Sent verification")
+
 @app.route('/', methods=["GET", "POST"])
 def index():
     if request.method == "POST":
@@ -22,10 +39,20 @@ def index():
         maxEmails = request.form.get("maxNo")
         print(email, maxEmails)
         if databaseConnection.addEmail(email, maxEmails):
+            sendVerifyEmail(email)
             flash("You will now receive some spam tests!", "alert-success")
         else:
             flash("Something has gone wrong!", "alert-danger")
     return render_template("index.html")
+
+@app.route('/verifyemail', methods=["GET", "POST"])
+def verifyEmail():
+    try:
+        email = request.args.get("email")
+        flash("Verified!", "alert-success")
+        return redirect(url_for("index"))
+    except:
+        return redirect(url_for("index"))
 
 @app.route('/unsubscribe', methods=["GET", "POST"])
 def unsubscribe():

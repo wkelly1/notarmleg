@@ -3,6 +3,8 @@ import os
 import re
 import mysql.connector
 import urllib.request
+import _thread
+import time
 from bs4 import BeautifulSoup
 from nltk.corpus import stopwords
 import sys, csv, nltk, math
@@ -10,6 +12,8 @@ import sys, csv, nltk, math
 
 #csvFilePath = sys.argv[1]
 #inputFilePath = sys.argv[2]
+
+PATH= "C:\\Users\\wkell\\OneDrive - University of Southampton\\University work\\Year 1\\Other\\Hackathon\\notarmleg\\neuralnetwork"
 
 punctuations = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
 
@@ -164,6 +168,31 @@ def execChangeSql(sql):
     mydb.commit()
     mycursor.close()
 
+def startThread(i,cor,sig,dif):
+    boolean = True
+    while boolean:
+        print("MatLab is busy!")
+        f = open(PATH+"input2.txt","w+")
+        var = f.read()
+        if var == "-1":
+            f.write(str(cor)+"\n"+str(sig)+"\n"+str(dif))
+            boolean2electricboogaloo = True
+            while boolean2electricboogaloo:
+                print("Waiting for MatLab")
+                f2 = open(PATH+"data.txt","w+")
+                w = f2.read()
+                if w != "":
+                    boolean2electricboogaloo = False
+                    boolean = False
+                time.sleep(1)
+            
+        time.sleep(10)
+
+    execChangeSql("UPDATE spammail SET probability + " + w + "WHERE idEmail = " + i)
+    
+    
+
+
 
 urlResponse = urllib.request.urlopen(str(repo) + "/mail.csv")
 mail = urlResponse.read().decode("utf-8").replace('\r', '').replace('\n', '').split(",")
@@ -187,6 +216,12 @@ for i in mail:
         sql2 = "INSERT INTO spammail (repo, idEmail) VALUES ('" + repo + "', '" + i + "')"
         execChangeSql(sql2)
         print("Adding mail: " + i)
+
+    _thread.start_new_thread(startThread, (i,cor,sig,dif, ))
+
+    
+
+    
 
 
         

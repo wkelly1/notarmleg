@@ -1,1 +1,1 @@
-**Generates fake spam for training people**
+**Generates fake spam for training**
